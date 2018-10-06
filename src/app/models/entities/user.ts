@@ -1,14 +1,14 @@
 import { observable } from "mobx";
 
 export default class User {
-    id: number;
+    public id: number;
 
     @observable
-    name: string;
+    public name: string;
 
     @observable
-    birthDate: string;
+    public birthDate: string;
 
     @observable
-    email: string;
+    public email: string;
 }
