@@ -1,3 +1,4 @@
+import BlueGrey from "@material-ui/core/colors/blueGrey";
 import deepPurple from "@material-ui/core/colors/deepPurple";
 import { createMuiTheme } from "@material-ui/core/styles";
 
@@ -8,6 +9,9 @@ export default createMuiTheme({
             main: deepPurple["500"],
         },
         secondary: deepPurple,
+        background: {
+            paper: BlueGrey["900"],
+        },
     },
     typography: {
         // Use the system font instead of the default Roboto font.

@@ -18,7 +18,7 @@ class App extends React.Component<IPropsType> {
                     <LyveAppBar />
                 </Grid>
                 <Grid item xs className={classes.page}>
-                    <h1>Current page goes here</h1>
+                    <h1 />
                 </Grid>
             </Grid>
         );

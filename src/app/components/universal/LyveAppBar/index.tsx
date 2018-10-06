@@ -15,7 +15,7 @@ class LyveAppBar extends React.Component<IPropsType> {
     public render() {
         const { classes } = this.props;
         return (
-            <AppBar position="relative">
+            <AppBar position="relative" className={classes.appBar}>
                 <Toolbar variant="dense" className={classes.toolbar}>
                     <Grid
                         container
