@@ -5,7 +5,7 @@ export default createMuiTheme({
     palette: {
         type: "dark",
         primary: {
-            main: deepPurple["800"],
+            main: deepPurple["500"],
         },
         secondary: deepPurple,
     },
