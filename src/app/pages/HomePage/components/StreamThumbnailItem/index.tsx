@@ -11,35 +11,28 @@ import styles from "./styles";
 
 interface IPropsType {
     title: string;
+    description: string;
+    imageUrl: string;
     classes: IStyleClasses;
 }
 
-/**
- * FUTURE PROPS:
- * image
- * description
- */
-
 class StreamThumbnailItem extends React.Component<IPropsType> {
     public render() {
-        const { title, classes } = this.props;
+        const { title, description, imageUrl, classes } = this.props;
         return (
             <Grid item>
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
-                            image="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/05/2017GettyImages-the-beatles-radio-station-920x584.jpg"
+                            image={imageUrl}
                             className={classes.image}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="headline">
                                 {title}
                             </Typography>
-                            <Typography>
-                                Description, something long, you know, something
-                                that catches the attention the first time.
-                            </Typography>
+                            <Typography>{description}</Typography>
                         </CardContent>
                     </CardActionArea>
                 </Card>
