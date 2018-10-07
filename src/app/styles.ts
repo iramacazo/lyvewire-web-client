@@ -5,7 +5,7 @@ export default (theme: Theme): StyleRules => ({
         height: "100%",
     },
     page: {
-        overflow: "hidden",
+        overflow: "scroll",
         background: theme.palette.background.paper,
     },
 });
