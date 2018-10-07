@@ -1,4 +1,5 @@
 import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import { withStyles } from "@material-ui/core/styles";
 import * as React from "react";
@@ -14,11 +15,13 @@ class FeatureEvent extends React.Component<IPropsType> {
         const { classes } = this.props;
         return (
             <Card className={classes.card}>
-                <CardMedia
-                    component="img"
-                    className={classes.image}
-                    image="https://blog.macsales.com/wp-content/uploads/2018/06/MacBookPro-2018r.jpg"
-                />
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        className={classes.image}
+                        image="https://blog.macsales.com/wp-content/uploads/2018/06/MacBookPro-2018r.jpg"
+                    />
+                </CardActionArea>
             </Card>
         );
     }
