@@ -20,13 +20,13 @@ class StreamThumbnailItem extends React.Component<IPropsType> {
         const { title, description, imageUrl, classes } = this.props;
         return (
             <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea className={classes.cardActionArea}>
                     <CardMedia
                         component="img"
                         image={imageUrl}
                         className={classes.image}
                     />
-                    <CardContent>
+                    <CardContent className={classes.cardDescription}>
                         <Typography gutterBottom variant="title">
                             {title}
                         </Typography>
