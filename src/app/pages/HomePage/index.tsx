@@ -1,9 +1,10 @@
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 import * as React from "react";
 import IStyleClasses from "../../interfaces/style_classes";
+import FeatureEvent from "./components/FeatureEvent";
+import Sidebar from "./components/Sidebar";
+import StreamThumbnails from "./components/StreamThumbnails";
 import styles from "./styles";
 
 interface IPropsType {
@@ -14,15 +15,19 @@ class HomePage extends React.Component<IPropsType> {
     public render() {
         const { classes } = this.props;
         return (
-            <Grid container className={classes.carousel}>
-                <Grid item>
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            image="https://cdn.cnn.com/cnnnext/dam/assets/181002133751-trump-remarks-10022018-exlarge-169.jpg"
-                            title="Contemplative Reptile"
-                        />
-                    </Card>
+            <Grid container direction="column" className={classes.page}>
+                <Grid item className={classes.section}>
+                    <FeatureEvent />
+                </Grid>
+                <Grid item className={classes.section}>
+                    <Grid container direction="row" spacing={16}>
+                        <Grid item xs className={classes.thumbnails}>
+                            <StreamThumbnails />
+                        </Grid>
+                        <Grid item className={classes.sidebar}>
+                            <Sidebar />
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         );
