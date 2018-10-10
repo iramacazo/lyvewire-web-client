@@ -1,16 +1,16 @@
-import BlueGrey from "@material-ui/core/colors/blueGrey";
-import deepPurple from "@material-ui/core/colors/deepPurple";
+import DeepPurple from "@material-ui/core/colors/deepPurple";
+import Grey from "@material-ui/core/colors/grey";
 import { createMuiTheme } from "@material-ui/core/styles";
 
 export default createMuiTheme({
     palette: {
         type: "dark",
         primary: {
-            main: deepPurple["500"],
+            main: DeepPurple["500"],
         },
-        secondary: deepPurple,
+        secondary: DeepPurple,
         background: {
-            paper: BlueGrey["900"],
+            paper: Grey["900"],
         },
     },
     typography: {
