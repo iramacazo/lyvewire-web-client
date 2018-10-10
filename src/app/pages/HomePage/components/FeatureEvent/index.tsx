@@ -19,7 +19,7 @@ class FeatureEvent extends React.Component<IPropsType> {
                     <CardMedia
                         component="img"
                         className={classes.image}
-                        image="https://blog.macsales.com/wp-content/uploads/2018/06/MacBookPro-2018r.jpg"
+                        image="https://i.ytimg.com/vi/fGDA-WDIdkk/maxresdefault.jpg"
                     />
                 </CardActionArea>
             </Card>

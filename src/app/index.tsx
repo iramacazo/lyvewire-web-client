@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import * as React from "react";
 import LyveAppBar from "./components/universal/LyveAppBar";
 import IStyleClasses from "./interfaces/style_classes";
-import StreamingPage from "./pages/StreamingPage";
+import HomePage from "./pages/HomePage";
 import styles from "./styles";
 
 interface IPropsType {
@@ -19,7 +19,7 @@ class App extends React.Component<IPropsType> {
                     <LyveAppBar />
                 </Grid>
                 <Grid item xs className={classes.page}>
-                    <StreamingPage />
+                    <HomePage />
                 </Grid>
             </Grid>
         );

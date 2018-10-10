@@ -8,6 +8,6 @@ export default (theme: Theme): StyleRules => ({
         paddingRight: theme.spacing.unit * 2,
     },
     appBar: {
-        background: Grey["800"],
+        background: Grey["900"],
     },
 });

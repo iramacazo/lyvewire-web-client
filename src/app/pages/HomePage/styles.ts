@@ -9,7 +9,4 @@ export default (theme: Theme): StyleRules => ({
         marginLeft: theme.spacing.unit * 16,
         marginRight: theme.spacing.unit * 16,
     },
-    sidebar: {
-        width: 250,
-    },
 });

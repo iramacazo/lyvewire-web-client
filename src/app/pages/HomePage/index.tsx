@@ -3,7 +3,6 @@ import { withStyles } from "@material-ui/core/styles";
 import * as React from "react";
 import IStyleClasses from "../../interfaces/style_classes";
 import FeatureEvent from "./components/FeatureEvent";
-import Sidebar from "./components/Sidebar";
 import StreamThumbnails from "./components/StreamThumbnails";
 import styles from "./styles";
 
@@ -20,14 +19,7 @@ class HomePage extends React.Component<IPropsType> {
                     <FeatureEvent />
                 </Grid>
                 <Grid item className={classes.section}>
-                    <Grid container direction="row" spacing={16}>
-                        <Grid item xs className={classes.thumbnails}>
-                            <StreamThumbnails />
-                        </Grid>
-                        <Grid item className={classes.sidebar}>
-                            <Sidebar />
-                        </Grid>
-                    </Grid>
+                    <StreamThumbnails />
                 </Grid>
             </Grid>
         );
