@@ -3,16 +3,14 @@ import { StyleRules, Theme } from "@material-ui/core/styles";
 import { darken } from "@material-ui/core/styles/colorManipulator";
 
 export default (theme: Theme): StyleRules => ({
-    root: {
-        height: "100%",
-    },
-    content: {
-        background: darken(Grey["900"], 0.5),
-    },
-    page: {
-        overflow: "scroll",
-    },
     sidebar: {
-        overflow: "scroll",
+        width: "100%",
+        height: "100%",
+        zIndex: 2,
+        background: darken(Grey["800"], 0.6),
+        color: "white",
+    },
+    sidebarGridItem: {
+        width: "100%",
     },
 });

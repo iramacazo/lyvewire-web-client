@@ -1,10 +1,10 @@
 import { StyleRules, Theme } from "@material-ui/core/styles";
 
 export default (theme: Theme): StyleRules => ({
-    page: {
+    root: {
+        paddingBottom: theme.spacing.unit * 3,
+    },
+    lyveLogo: {
         padding: theme.spacing.unit * 3,
-        width: "100%",
-        margin: "auto",
-        maxWidth: 1600,
     },
 });
