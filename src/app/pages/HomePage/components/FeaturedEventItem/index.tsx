@@ -6,31 +6,35 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import * as React from "react";
 import IStyleClasses from "../../../../interfaces/style_classes";
+import Event from "../../../../models/entities/event";
 import styles from "./styles";
 
 interface IPropsType {
-    title: string;
-    description: string;
-    imageUrl: string;
+    event: Event;
     classes: IStyleClasses;
 }
 
-class StreamThumbnailItem extends React.Component<IPropsType> {
+class FeaturedEventItem extends React.Component<IPropsType> {
     public render() {
-        const { title, description, imageUrl, classes } = this.props;
+        const { event, classes } = this.props;
         return (
             <Card className={classes.card}>
                 <CardActionArea className={classes.cardActionArea}>
                     <CardMedia
                         component="img"
-                        image={imageUrl}
+                        image={event.image}
                         className={classes.image}
                     />
                     <CardContent className={classes.cardDescription}>
-                        <Typography gutterBottom variant="h6">
-                            {title}
+                        <Typography variant="h6" className={classes.cardTitle}>
+                            {event.title}
                         </Typography>
-                        <Typography variant="caption">{description}</Typography>
+                        <Typography variant="overline">
+                            {event.channel.title}
+                        </Typography>
+                        <Typography variant="caption">
+                            {event.description}
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>
@@ -38,4 +42,4 @@ class StreamThumbnailItem extends React.Component<IPropsType> {
     }
 }
 
-export default withStyles(styles)(StreamThumbnailItem);
+export default withStyles(styles)(FeaturedEventItem);

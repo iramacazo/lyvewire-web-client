@@ -12,32 +12,31 @@ export default class StreamWithUs extends React.Component {
                 alignItems="stretch"
                 justify="center"
                 direction="column"
-                spacing={16}
+                wrap="nowrap"
+                spacing={24}
             >
                 <Grid item>
                     <Divider />
                 </Grid>
-                <Grid item container direction="row" wrap="nowrap">
-                    <Grid item xs>
-                        <Typography variant="h5">
+                <Grid
+                    item
+                    container
+                    direction="column"
+                    wrap="nowrap"
+                    spacing={16}
+                    alignItems="flex-start"
+                >
+                    <Grid item>
+                        <Typography variant="h6">
                             We're lyve for the first time!
                         </Typography>
                     </Grid>
-                    <Grid
-                        item
-                        xs
-                        container
-                        direction="row"
-                        spacing={16}
-                        justify="flex-end"
-                    >
+                    <Grid item container spacing={8}>
                         <Grid item>
                             <Button variant="outlined">Join our team</Button>
                         </Grid>
                         <Grid item>
-                            <Button variant="outlined">
-                                Go Lyve with Lyve Pro®
-                            </Button>
+                            <Button variant="outlined">Go Lyve</Button>
                         </Grid>
                     </Grid>
                 </Grid>
