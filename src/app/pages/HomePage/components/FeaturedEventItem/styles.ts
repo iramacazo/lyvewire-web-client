@@ -21,4 +21,7 @@ export default (theme: Theme): StyleRules => ({
         bottom: 0,
         background: "linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1))",
     },
+    cardTitle: {
+        lineHeight: 1,
+    },
 });
