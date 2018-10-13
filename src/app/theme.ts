@@ -8,7 +8,9 @@ export default createMuiTheme({
         primary: {
             main: DeepPurple["500"],
         },
-        secondary: DeepPurple,
+        secondary: {
+            main: DeepPurple["300"],
+        },
         background: {
             paper: Grey["900"],
         },
