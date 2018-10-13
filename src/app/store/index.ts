@@ -1,11 +1,14 @@
 import authentication, { AuthenticationState } from "./authentication";
+import stream, { StreamState } from "./stream";
 
 interface IRootStore {
     authentication: AuthenticationState;
+    stream: StreamState;
 }
 
 const rootStore: IRootStore = {
     authentication,
+    stream,
 };
 
 // Put rootStore as window variable when debugging
