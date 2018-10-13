@@ -8,12 +8,15 @@ export default createMuiTheme({
         primary: {
             main: DeepPurple["500"],
         },
-        secondary: DeepPurple,
+        secondary: {
+            main: DeepPurple["300"],
+        },
         background: {
             paper: Grey["900"],
         },
     },
     typography: {
+        useNextVariants: true,
         // Use the system font instead of the default Roboto font.
         fontFamily: [
             "-apple-system",

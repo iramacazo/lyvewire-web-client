@@ -2,8 +2,9 @@ import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 import * as React from "react";
 import IStyleClasses from "../../interfaces/style_classes";
-import FeatureEvent from "./components/FeatureEvent";
-import StreamThumbnails from "./components/StreamThumbnails";
+import EventBillboard from "./components/EventBillboard";
+import EventThumbnails from "./components/EventThumbnails";
+import FeaturedEvents from "./components/FeaturedEvents";
 import StreamWithUs from "./components/StreamWithUs";
 import styles from "./styles";
 
@@ -24,13 +25,16 @@ class HomePage extends React.Component<IPropsType> {
                 className={classes.page}
             >
                 <Grid item className={classes.section}>
-                    <FeatureEvent />
+                    <EventBillboard />
                 </Grid>
                 <Grid item className={classes.section}>
-                    <StreamThumbnails />
+                    <FeaturedEvents />
                 </Grid>
                 <Grid item>
                     <StreamWithUs />
+                </Grid>
+                <Grid item>
+                    <EventThumbnails />
                 </Grid>
             </Grid>
         );
