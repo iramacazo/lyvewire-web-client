@@ -4,6 +4,7 @@ import { Provider } from "mobx-react";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import store from "../src/app/store";
 import App from "./app";
 import theme from "./app/theme";
 import registerServiceWorker from "./registerServiceWorker";
@@ -11,7 +12,7 @@ import registerServiceWorker from "./registerServiceWorker";
 const app = (
     <CssBaseline>
         <MuiThemeProvider theme={theme}>
-            <Provider>
+            <Provider {...store}>
                 <BrowserRouter>
                     <App />
                 </BrowserRouter>
