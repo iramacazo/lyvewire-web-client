@@ -19,7 +19,7 @@ export default class StreamWithUs extends React.Component {
                 </Grid>
                 <Grid item container direction="row" wrap="nowrap">
                     <Grid item xs>
-                        <Typography variant="headline">
+                        <Typography variant="h5">
                             We're lyve for the first time!
                         </Typography>
                     </Grid>

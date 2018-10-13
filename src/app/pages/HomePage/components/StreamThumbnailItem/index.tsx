@@ -27,7 +27,7 @@ class StreamThumbnailItem extends React.Component<IPropsType> {
                         className={classes.image}
                     />
                     <CardContent className={classes.cardDescription}>
-                        <Typography gutterBottom variant="title">
+                        <Typography gutterBottom variant="h6">
                             {title}
                         </Typography>
                         <Typography variant="caption">{description}</Typography>

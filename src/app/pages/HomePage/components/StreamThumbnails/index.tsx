@@ -9,7 +9,7 @@ export default class StreamThumbnails extends React.Component {
         return (
             <Grid container direction="column" spacing={16}>
                 <Grid item>
-                    <Typography variant="headline">
+                    <Typography variant="h5">
                         Events We Love Right Now
                     </Typography>
                 </Grid>
