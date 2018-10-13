@@ -1,15 +1,15 @@
 import Grey from "@material-ui/core/colors/grey";
 import { StyleRules } from "@material-ui/core/styles";
+import { darken } from "@material-ui/core/styles/colorManipulator";
 
 export default {
     root: {
         height: "100%",
+        borderLeft: "1px solid",
+        borderColor: Grey["800"],
+        background: darken(Grey["900"], 0.3),
     },
-    section: {
-        background: Grey["800"],
-        transition: "400ms all",
-    },
-    wrapper: {
-        height: "100% !important",
+    tabBarContainer: {
+        background: Grey["900"],
     },
 } as StyleRules;
